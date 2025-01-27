@@ -1,0 +1,112 @@
+{
+    "The Brutalist": {
+        "year": 2024,
+        "rating": 8.1,
+        "poster": "https://m.media-amazon.com/images/M/MV5BMWEzOGNlY2EtMzlkZS00ODllLThmYzAtNmU4ZmJkZmZmZTQ4XkEyXkFqcGc@._V1_SX300.jpg"
+    },
+    "A Complete Unknown": {
+        "year": 2024,
+        "rating": 7.8,
+        "poster": "https://m.media-amazon.com/images/M/MV5BYTA2NTA5NDYtMzlkOC00MTQxLWI0NDQtMzk2M2YzMGE4MTkxXkEyXkFqcGc@._V1_SX300.jpg"
+    },
+    "Deadpool": {
+        "year": 2016,
+        "rating": 8.0,
+        "poster": "https://m.media-amazon.com/images/M/MV5BNzY3ZWU5NGQtOTViNC00ZWVmLTliNjAtNzViNzlkZWQ4YzQ4XkEyXkFqcGc@._V1_SX300.jpg"
+    },
+    "12 Years a Slave": {
+        "year": 2013,
+        "rating": 8.1,
+        "poster": "https://m.media-amazon.com/images/M/MV5BMjExMTEzODkyN15BMl5BanBnXkFtZTcwNTU4NTc4OQ@@._V1_SX300.jpg"
+    },
+    "Gravity": {
+        "year": 2013,
+        "rating": 7.7,
+        "poster": "https://m.media-amazon.com/images/M/MV5BNjE5MzYwMzYxMF5BMl5BanBnXkFtZTcwOTk4MTk0OQ@@._V1_SX300.jpg"
+    },
+    "Frozen": {
+        "year": 2013,
+        "rating": 7.4,
+        "poster": "https://m.media-amazon.com/images/M/MV5BMTQ1MjQwMTE5OF5BMl5BanBnXkFtZTgwNjk3MTcyMDE@._V1_SX300.jpg"
+    },
+    "The Wolf of Wall Street": {
+        "year": 2013,
+        "rating": 8.2,
+        "poster": "https://m.media-amazon.com/images/M/MV5BMjIxMjgxNTk0MF5BMl5BanBnXkFtZTgwNjIyOTg2MDE@._V1_SX300.jpg"
+    },
+    "Inception": {
+        "year": 2010,
+        "rating": 8.8,
+        "poster": "https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_SX300.jpg"
+    },
+    "The Social Network": {
+        "year": 2010,
+        "rating": 7.8,
+        "poster": "https://m.media-amazon.com/images/M/MV5BMjlkNTE5ZTUtNGEwNy00MGVhLThmZjMtZjU1NDE5Zjk1NDZkXkEyXkFqcGc@._V1_SX300.jpg"
+    },
+    "Toy Story 3": {
+        "year": 2010,
+        "rating": 8.3,
+        "poster": "https://m.media-amazon.com/images/M/MV5BMTgxOTY4Mjc0MF5BMl5BanBnXkFtZTcwNTA4MDQyMw@@._V1_SX300.jpg"
+    },
+    "Black Swan": {
+        "year": 2010,
+        "rating": 8.0,
+        "poster": "https://m.media-amazon.com/images/M/MV5BNzY2NzI4OTE5MF5BMl5BanBnXkFtZTcwMjMyNDY4Mw@@._V1_SX300.jpg"
+    },
+    "The King's Speech": {
+        "year": 2010,
+        "rating": 8.0,
+        "poster": "https://m.media-amazon.com/images/M/MV5BMzU5MjEwMTg2Nl5BMl5BanBnXkFtZTcwNzM3MTYxNA@@._V1_SX300.jpg"
+    },
+    "No Country for Old Men": {
+        "year": 2007,
+        "rating": 8.2,
+        "poster": "https://m.media-amazon.com/images/M/MV5BMjA5Njk3MjM4OV5BMl5BanBnXkFtZTcwMTc5MTE1MQ@@._V1_SX300.jpg"
+    },
+    "There Will Be Blood": {
+        "year": 2007,
+        "rating": 8.2,
+        "poster": "https://m.media-amazon.com/images/M/MV5BMjAxODQ4MDU5NV5BMl5BanBnXkFtZTcwMDU4MjU1MQ@@._V1_SX300.jpg"
+    },
+    "Ratatouille": {
+        "year": 2007,
+        "rating": 8.1,
+        "poster": "https://m.media-amazon.com/images/M/MV5BMTMzODU0NTkxMF5BMl5BanBnXkFtZTcwMjQ4MzMzMw@@._V1_SX300.jpg"
+    },
+    "Juno": {
+        "year": 2007,
+        "rating": 7.4,
+        "poster": "https://m.media-amazon.com/images/M/MV5BMTIwMDgwODc5Nl5BMl5BanBnXkFtZTYwMjQzMDM4._V1_SX300.jpg"
+    },
+    "Atonement": {
+        "year": 2007,
+        "rating": 7.8,
+        "poster": "https://m.media-amazon.com/images/M/MV5BZmQ5ZjZlMzMtODA1ZS00NTNiLWIzOTYtOTQyYjQ2YWQxMTA1XkEyXkFqcGc@._V1_SX300.jpg"
+    },
+    "Shrek": {
+        "year": 2001,
+        "rating": 7.9,
+        "poster": "https://m.media-amazon.com/images/M/MV5BN2FkMTRkNTUtYTI0NC00ZjI4LWI5MzUtMDFmOGY0NmU2OGY1XkEyXkFqcGc@._V1_SX300.jpg"
+    },
+    "A Beautiful Mind": {
+        "year": 2001,
+        "rating": 8.2,
+        "poster": "https://m.media-amazon.com/images/M/MV5BNzljZTk5ZDgtZTQ1Zi00NTM4LThlOGUtZDk2MGM4NDQ4NWQyXkEyXkFqcGc@._V1_SX300.jpg"
+    },
+    "Monsters, Inc.": {
+        "year": 2001,
+        "rating": 8.1,
+        "poster": "https://m.media-amazon.com/images/M/MV5BMTY1NTI0ODUyOF5BMl5BanBnXkFtZTgwNTEyNjQ0MDE@._V1_SX300.jpg"
+    },
+    "Harry Potter and the Sorcerer's Stone": {
+        "year": 2001,
+        "rating": 7.7,
+        "poster": "https://m.media-amazon.com/images/M/MV5BNTU1MzgyMDMtMzBlZS00YzczLThmYWEtMjU3YmFlOWEyMjE1XkEyXkFqcGc@._V1_SX300.jpg"
+    },
+    "The Lord of the Rings: The Fellowship of the Ring": {
+        "year": 2001,
+        "rating": 8.9,
+        "poster": "https://m.media-amazon.com/images/M/MV5BNzIxMDQ2YTctNDY4MC00ZTRhLTk4ODQtMTVlOWY4NTdiYmMwXkEyXkFqcGc@._V1_SX300.jpg"
+    }
+}

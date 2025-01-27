@@ -1,4 +1,5 @@
 from storage_json import JSONStorage  # Use JSON storage
+import random
 
 storage = JSONStorage()
 
@@ -57,24 +58,38 @@ def stats():
     if not movies:
         print("\nNo movies found.")
         return
+
     total_movies = len(movies)
     avg_rating = sum(movie["rating"] for movie in movies.values()) / total_movies
-    sorted_ratings = sorted(movie["rating"] for movie in movies.values())
-    median_rating = sorted_ratings[total_movies // 2]
+    sorted_movies = sorted(movies.items(), key=lambda x: x[1]["rating"], reverse=True)
+
+    median_rating = sorted_movies[total_movies // 2][1]["rating"] if total_movies % 2 != 0 else (
+                                                                                                        sorted_movies[
+                                                                                                            total_movies // 2 - 1][
+                                                                                                            1][
+                                                                                                            "rating"] +
+                                                                                                        sorted_movies[
+                                                                                                            total_movies // 2][
+                                                                                                            1]["rating"]
+                                                                                                ) / 2
+
+    best_movie = sorted_movies[0]
+    worst_movie = sorted_movies[-1]
+
     print(f"\nTotal Movies: {total_movies}")
     print(f"Average Rating: {avg_rating:.2f}")
     print(f"Median Rating: {median_rating:.2f}")
+    print(f"Best Movie: {best_movie[0]} (Rating: {best_movie[1]['rating']})")
+    print(f"Worst Movie: {worst_movie[0]} (Rating: {worst_movie[1]['rating']})")
 
 
 def random_movie():
-    import random
-
     movies = storage.list_movies()
     if not movies:
         print("\nNo movies found.")
-    else:
-        title, details = random.choice(list(movies.items()))
-        print(f"\nRandom Movie: {title} (Year: {details['year']}, Rating: {details['rating']})")
+        return
+    title, details = random.choice(list(movies.items()))
+    print(f"\nRandom Movie: {title} (Year: {details['year']}, Rating: {details['rating']})")
 
 
 def search_movie():
@@ -92,10 +107,10 @@ def movies_sorted_by_rating():
     movies = storage.list_movies()
     if not movies:
         print("\nNo movies found.")
-    else:
-        sorted_movies = sorted(movies.items(), key=lambda x: x[1]["rating"], reverse=True)
-        for title, details in sorted_movies:
-            print(f"{title} (Year: {details['year']}, Rating: {details['rating']})")
+        return
+    sorted_movies = sorted(movies.items(), key=lambda x: x[1]["rating"], reverse=True)
+    for title, details in sorted_movies:
+        print(f"{title} (Year: {details['year']}, Rating: {details['rating']})")
 
 
 def generate_website():
@@ -103,30 +118,31 @@ def generate_website():
     if not movies:
         print("\nNo movies found.")
         return
-    html_content = """
-    <html>
-    <head><title>Movies</title></head>
-    <body>
-        <h1>Movie List</h1>
-        <ul>
-    """
-    for title, details in movies.items():
-        html_content += f"""
+
+    try:
+        with open("_static/index_template.html", "r") as template_file:
+            template_content = template_file.read()
+
+        movies_html = "".join([
+            f"""
             <li>
                 <h2>{title}</h2>
                 <p>Year: {details['year']}</p>
                 <p>Rating: {details['rating']}</p>
-                <img src="{details['poster']}" alt="Poster">
+                <img src=\"{details['poster']}\" alt=\"Poster\">
             </li>
-        """
-    html_content += """
-        </ul>
-    </body>
-    </html>
-    """
-    with open("movies.html", "w") as file:
-        file.write(html_content)
-    print("\nWebsite generated as 'movies.html'!")
+            """
+            for title, details in movies.items()
+        ])
+
+        html_content = template_content.replace("{{ movies }}", movies_html)
+
+        with open("movies.html", "w") as output_file:
+            output_file.write(html_content)
+
+        print("\nWebsite generated as 'movies.html'!")
+    except FileNotFoundError:
+        print("Template file '_static/index_template.html' not found.")
 
 
 def main():
